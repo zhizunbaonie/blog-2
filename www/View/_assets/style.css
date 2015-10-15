@@ -1,0 +1,218 @@
+html {
+    position: relative;
+    min-height: 90%;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+@media (min-width: 1200px) {
+    .container {
+        width: 1070px;
+    }
+}
+
+
+/*
+ * Masthead for nav
+ */
+.blog-masthead {
+    background-color: #428bca;
+    box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+    font-size: 16px;
+}
+
+/* Nav links */
+.blog-nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+    color: #fff;
+}
+.blog-nav .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid;
+    border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+.blog-header {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.blog-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: normal;
+}
+.blog-main-title {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 35px;
+    font-weight: normal;
+    color: #4b5c90;
+}
+.blog-description {
+    font-size: 20px;
+    color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+.blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* Sidebar modules for boxing content */
+.sidebar-module {
+    padding: 15px;
+    margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+    margin-bottom: 0;
+}
+
+
+/*
+ * Blog posts
+ */
+.blog-post {
+    margin-bottom: 50px;
+    background-color: #f9f9f9;
+}
+.blog-post-title {
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+.blog-post-meta {
+    margin-bottom: 20px;
+    color: #999;
+}
+/* Pagination */
+.pager {
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: left;
+    color: #1a1a1a;
+}
+.pager > li > a
+{
+    width: 140px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+/*
+ * Editor
+*/
+.articles-list
+{
+    list-style-type:none;
+}
+.articles-list li
+{
+    margin: 5px;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+    text-align: center;
+    color: #808080;
+    background-color: #f9f9f9;
+    border-top: 1px solid #dddddd;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 20px;
+}
+
+
+/*
+ * Form: comments
+ */
+.form-area
+{
+    background-color: #FAFAFA;
+    padding: 0 20px 50px;
+    margin: 30px 0 50px;
+    border: 1px solid #dedede;
+}
+.author
+{
+    color: #0000aa;
+    font-weight: bold;
+}
+#commentsToggle
+{
+    font-weight: bold;
+}
+
+.clear
+{
+    /*No floating elements allowed on either the left or the right side.*/
+    clear: both;
+}
+
+.button
+{
+    margin: 10px 0 20px ;
+}
+
+.error
+{
+    color: red;
+    font-weight: bold;
+}
